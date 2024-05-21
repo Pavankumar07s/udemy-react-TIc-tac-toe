@@ -7,9 +7,7 @@
 html {
   font-family: 'Roboto Slab', sans-serif;
   line-height: 1.5;
-
   color: #ebe7ef;
-
   font-synthesis: none;
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
@@ -65,12 +63,14 @@ h1 {
   justify-content: center;
   align-items: center;
   gap: 2rem;
+  flex-wrap: wrap;
 }
 
 #players li {
   display: flex;
   align-items: center;
-  width: 50%;
+  width: 100%;
+  max-width: 20rem;
   border: 2px solid transparent;
 }
 
@@ -347,5 +347,77 @@ ol {
   }
   100% {
     transform: scale(1);
+  }
+}
+
+/* Media queries for responsiveness */
+@media (max-width: 768px) {
+  #players {
+    flex-direction: column;
+    gap: 1rem;
+  }
+
+  #players li {
+    width: 100%;
+  }
+
+  #game-container {
+    padding: 1rem;
+  }
+
+  h1 {
+    font-size: 2rem;
+  }
+
+  header img {
+    width: 6rem;
+  }
+
+  #game-board button {
+    width: 6rem;
+    height: 6rem;
+    font-size: 4rem;
+  }
+
+  #game-over h2 {
+    font-size: 3rem;
+  }
+
+  #game-over p {
+    font-size: 1.5rem;
+  }
+
+  #game-over button {
+    font-size: 1.2rem;
+    padding: 0.5rem;
+  }
+}
+
+@media (max-width: 480px) {
+  h1 {
+    font-size: 1.5rem;
+  }
+
+  header img {
+    width: 4rem;
+  }
+
+  #game-board button {
+    width: 5rem;
+    height: 5rem;
+    font-size: 3rem;
+  }
+
+  #game-over h2 {
+    font-size: 2rem;
+  }
+
+  #game-over p {
+    font-size: 1.2rem;
+  }
+
+  #game-over button {
+    font-size: 1rem;
+    padding: 0.4rem;
   }
 }
