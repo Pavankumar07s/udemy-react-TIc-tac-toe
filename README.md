@@ -37,6 +37,6 @@ Check out the live demo of the Tic Tac Toe game [here](#).
    git https://github.com/Pavankumar07s/udemy-react-TIc-tac-toe
    cd udemy-react-TIc-tac-toe
 
-##usage
+## usage
    ```sh
       npm run dev
