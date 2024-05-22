@@ -26,7 +26,8 @@ Check out the live demo of the Tic Tac Toe game [here](#).
 
 ## Screenshot
 
-![Tic Tac Toe Screenshot](./assets/screenshot.png)
+![Tic Tac Toe Screenshot](./udemy-react-TIc-tac-toe/public
+/homePage.png)
 
 ## Installation
 
