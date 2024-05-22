@@ -26,9 +26,9 @@ Check out the live demo of the Tic Tac Toe game [here](#).
 
 ## Screenshot
 
-![Tic Tac Toe Screenshot](https://github.com/Pavankumar07s/udemy-react-TIc-tac-toe/blob/master/public/homePage.png)
- <img src="https://github.com/Pavankumar07s/udemy-react-TIc-tac-toe/blob/master/public/game-logo.png"></img>
 
+ <img src="https://github.com/Pavankumar07s/udemy-react-TIc-tac-toe/blob/master/public/game-logo.png"></img>
+ ![Tic Tac Toe Screenshot](https://github.com/Pavankumar07s/udemy-react-TIc-tac-toe/blob/master/public/home.png)
 ## Installation
 
 1. Clone the repository:
