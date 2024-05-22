@@ -34,5 +34,5 @@ Check out the live demo of the Tic Tac Toe game [here](#).
 1. Clone the repository:
 
    ```bash
-   git clone https://github.com/your-username/tic-tac-toe-react.git
-   cd tic-tac-toe-react
+   git https://github.com/Pavankumar07s/udemy-react-TIc-tac-toe
+   cd udemy-react-TIc-tac-toe
