@@ -1,4 +1,7 @@
 # Tic Tac Toe Game
+![License](https://img.shields.io/badge/license-MIT-blue.svg)
+![Version](https://img.shields.io/badge/version-1.0.0-brightgreen.svg)
+![Build Status](https://img.shields.io/badge/build-passing-brightgreen.svg)
 
 A simple Tic Tac Toe game built with React. This project demonstrates the use of React components, state management, and basic styling to create an interactive game.
 
