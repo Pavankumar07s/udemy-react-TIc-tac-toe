@@ -18,10 +18,10 @@ html {
 body {
   background: radial-gradient(
       circle at top,
-      rgba(241, 210, 70, 0.98),
-      rgba(250, 176, 103, 0.87)
+      rgba(70, 241, 221, 0.98),
+      rgba(249, 137, 25, 0.87)
     ),
-    url('bg-pattern-dark.png');
+    url('background.jpg');
   background-repeat: repeat;
   background-size: 100% 100%, 30% 30%, 100% 100%;
   min-height: 110rem;
@@ -42,7 +42,7 @@ h1 {
   font-family: 'Caprasimo', cursive;
   font-size: 3rem;
   margin: 0 auto 3rem auto;
-  color: #3f3b00;
+  color: #dffc24;
 }
 
 #game-container {
@@ -50,7 +50,7 @@ h1 {
   margin: 3rem auto;
   padding: 2rem;
   border-radius: 6px;
-  background: linear-gradient(#383624, #282617);
+  background: linear-gradient(#5dcced, #282617);
   box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
   position: relative;
 }
@@ -71,7 +71,7 @@ h1 {
   align-items: center;
   width: 100%;
   max-width: 20rem;
-  border: 2px solid transparent;
+  border: 5px solid transparent;
 }
 
 #players.highlight-player li.active {
@@ -135,7 +135,7 @@ h1 {
 .player-symbol {
   margin-left: 1rem;
   font-size: 1rem;
-  color: #e1dec7;
+  color: #c7dfe1;
 }
 
 ol {
@@ -151,7 +151,7 @@ ol {
 #pre-game button {
   cursor: pointer;
   background: none;
-  color: #f8c031;
+  color: #31f8ee;
   border: none;
   font-family: 'Caprasimo', cursive;
   font-size: 4rem;
