@@ -2,7 +2,7 @@ import Player from "./Component/Player";
 import GameBoard from "./Component/GameBoard.jsx";
 import { useState } from "react";
 import Log from "./Component/Log.jsx";
-import { WINNING_COMBINATIONS } from "./winning-combinations.js";
+
 function App() {
   const [gameTurn, setGameTurn] = useState([]);
   const [activePlayer, setActivePlayer] = useState('X');
