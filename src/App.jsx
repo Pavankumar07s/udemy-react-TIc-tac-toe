@@ -1,38 +1,34 @@
-import Player from "./Component/Player"
-import GameBoard from "./Component/GameBoard.jsx"
-import { useState } from "react"
+import Player from "./Component/Player";
+import GameBoard from "./Component/GameBoard.jsx";
+import { useState } from "react";
 import Log from "./Component/Log.jsx";
+
 function App() {
-  const [gameTurn,setGameTurn]=useState([])
-  const[activeplayer,setActivePlayer]=useState('X');
+  const [gameTurn, setGameTurn] = useState([]);
+  const [activePlayer, setActivePlayer] = useState('X');
 
-  const handleSelectSquare=(rowIndex,colIndex)=>{
-    setActivePlayer((currentPlayer)=>currentPlayer==='X'?'O':'X')
-    setGameTurn(prevTurns=>{
-      let currentPlayer="X"
-      if(prevTurns.length>0&&prevTurns[0].player==='X'){currentPlayer='O'}
+  const handleSelectSquare = (rowIndex, colIndex) => {
+    setGameTurn(prevTurns => {
+      const currentPlayer = activePlayer;
+      const newTurn = { square: { row: rowIndex, col: colIndex }, player: currentPlayer };
+      return [newTurn, ...prevTurns];
+    });
 
-      const updateTurn=[{square:{
-        row:rowIndex,col:colIndex,player:currentPlayer
-      }},...prevTurns]
+    setActivePlayer(currentPlayer => currentPlayer === 'X' ? 'O' : 'X');
+  };
 
-      return updateTurn;
-    })
-
-  }
   return (
     <main>
       <div id="game-container">
         <ol id="players" className="highlight-player">
-          <Player player='player 1' symbol="X" isActive={activeplayer==="X"}/>
-          <Player player= 'player 2' symbol="O" isActive={activeplayer==="O"}/>
-          
+          <Player player='player 1' symbol="X" isActive={activePlayer === "X"} />
+          <Player player='player 2' symbol="O" isActive={activePlayer === "O"} />
         </ol>
-        <GameBoard onSelectSquare={handleSelectSquare} activePlayerSymbol={activeplayer}/>
+        <GameBoard onSelectSquare={handleSelectSquare} turns={gameTurn} />
       </div>
-      <Log/>
+      <Log turns={gameTurn}/>
     </main>
-  )
+  );
 }
 
-export default App
+export default App;
